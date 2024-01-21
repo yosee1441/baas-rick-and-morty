@@ -7,6 +7,8 @@ import {
   DeleteDateColumn,
 } from 'typeorm';
 
+import { Character as CharacterInterface } from '../interfaces';
+
 @Entity()
 export class Character {
   /**
@@ -20,7 +22,7 @@ export class Character {
     nullable: false,
     default: {},
   })
-  jsonbRickAndMorty: string;
+  jsonbRickAndMorty: CharacterInterface;
 
   @CreateDateColumn({
     name: 'created_at',
