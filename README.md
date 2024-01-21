@@ -16,6 +16,11 @@ npm i -g @nestjs/cli
 ```bash
 docker-compose up -d
 ```
+5. Show doc API
+* Open other browser
+```bash
+http://localhost:3002/docs
+```
 
 ## Running the database
 ```bash
